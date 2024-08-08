@@ -1,0 +1,117 @@
+.markdown-renderer-container {
+  .toastui-editor-defaultUI {
+    .toastui-editor-toolbar {
+      display: none;
+    }
+
+    .toastui-editor-md-container {
+      .toastui-editor-md-preview .toastui-editor-contents > p {
+        margin-bottom: 14px;
+      }
+      .toastui-editor-md-preview .toastui-editor-contents {
+        font-style: normal;
+        color: #1e2022;
+        h1,
+        h2,
+        h3 {
+          border: none;
+          font-size: 26px;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -0.52px;
+          margin-top: 40px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: -0.36px;
+        }
+        .toastui-editor-md-preview-highlight::after {
+          background-color: white;
+        }
+        h1,
+        h2,
+        h3,
+        p {
+          transition: linear 0.2s;
+          strong {
+            font-weight: 500;
+          }
+        }
+      }
+      ul {
+        li::before {
+          top: 6.5px;
+          height: 6px;
+          width: 6px;
+        }
+        li {
+          margin-bottom: 4px;
+        }
+      }
+      ol {
+        li::before {
+          top: 3px;
+        }
+        li {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .markdown-renderer-container {
+    .toastui-editor-defaultUI {
+      .toastui-editor-md-container {
+        .toastui-editor-md-preview .toastui-editor-contents {
+          h1,
+          h2 {
+            font-size: 23px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .markdown-renderer-container {
+    .toastui-editor-defaultUI {
+      .toastui-editor-md-container {
+        .toastui-editor-md-preview .toastui-editor-contents {
+          h1,
+          h2 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 15px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .markdown-renderer-container {
+    .toastui-editor-defaultUI {
+      .toastui-editor-md-container {
+        .toastui-editor-md-preview .toastui-editor-contents {
+          h1,
+          h2 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

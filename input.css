@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1E2022;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Customize scrollbar for elements with the .no-scrollbar-none class */
+.no-scrollbar-none::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+.no-scrollbar-none::-webkit-scrollbar-thumb {
+  background-color: #4755697e;
+  border-radius: 20px;
+  min-height: 10%;
+}
+
+.markdown-renderer-container .toastui-editor-toolbar {
+  display: none;
+}
